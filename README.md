@@ -1,2 +1,2 @@
 # PC2T
-Programovanie, projekt, Java
+Programovanie Eclipse, projekt v programovacom jazyku Java.
