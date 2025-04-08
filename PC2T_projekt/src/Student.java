@@ -44,4 +44,23 @@ public abstract class Student {
 
     // Abstraktná metóda pre vykonanie špeciálnej dovednosti
     public abstract void vykonajDovednost();
+
+	
+	public int getId() {
+	    return id;
+	}
+
+	public String getMeno() {
+	    return meno;
+	}
+
+	public String getPriezvisko() {
+	    return priezvisko;
+	}
+
+	public int getRokNarodenia() {
+	    return rokNarodenia;
+	}
 }
+
+	
