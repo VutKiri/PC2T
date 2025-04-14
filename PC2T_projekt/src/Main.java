@@ -1,3 +1,5 @@
+package projekt_pc2t;
+
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +22,7 @@ public class Main {
             System.out.print("Zvoľ možnosť: ");
 
             int volba = scanner.nextInt();
-            scanner.nextLine(); // odčítaj ENTER
+            scanner.nextLine(); 
 
             switch (volba) {
                 case 1:
@@ -30,8 +32,8 @@ public class Main {
                     String priezvisko = scanner.nextLine();
                     System.out.print("Rok narodenia: ");
                     int rok = scanner.nextInt();
-                    scanner.nextLine(); // ENTER
-                    System.out.print("Odbor (telekomunikacie / kyberbezpecnost): ");
+                    scanner.nextLine(); 
+                    System.out.print("Odbor: telekomunikacie (TLI) / kyberbezpecnost (KYB) ");
                     String odbor = scanner.nextLine();
                     db.pridajStudenta(meno, priezvisko, rok, odbor);
                     break;
