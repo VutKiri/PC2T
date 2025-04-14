@@ -1,3 +1,5 @@
+package projekt_pc2t;
+
 import java.util.*;
 
 public class StudentDatabase {
@@ -12,9 +14,9 @@ public class StudentDatabase {
     public void pridajStudenta(String meno, String priezvisko, int rokNarodenia, String odbor) {
         Student student = null;
 
-        if (odbor.equalsIgnoreCase("telekomunikacie")) {
+        if (odbor.equalsIgnoreCase("TLI")) {
             student = new TelekomunikacnyStudent(dalsieId, meno, priezvisko, rokNarodenia);
-        } else if (odbor.equalsIgnoreCase("kyberbezpecnost")) {
+        } else if (odbor.equalsIgnoreCase("KYB")) {
             student = new KyberbezpecnostnyStudent(dalsieId, meno, priezvisko, rokNarodenia);
         } else {
             System.out.println("Neznámy odbor: " + odbor);
@@ -82,8 +84,8 @@ public class StudentDatabase {
         int pocet = 0;
 
         for (Student s : studenti.values()) {
-            if ((odbor.equalsIgnoreCase("telekomunikacie") && s instanceof TelekomStudent) ||
-                (odbor.equalsIgnoreCase("kyberbezpecnost") && s instanceof KyberStudent)) {
+            if ((odbor.equalsIgnoreCase("telekomunikacie") && s instanceof TelekomunikacnyStudent) ||
+                (odbor.equalsIgnoreCase("kyberbezpecnost") && s instanceof KyberbezpecnostnyStudent)) {
 
                 double priemer = s.vypocitajPriemer();
                 if (priemer > 0) { // len ak má známky
@@ -105,9 +107,9 @@ public class StudentDatabase {
         int kyber = 0;
 
         for (Student s : studenti.values()) {
-            if (s instanceof TelekomStudent) {
+            if (s instanceof TelekomunikacnyStudent) {
                 telekom++;
-            } else if (s instanceof KyberStudent) {
+            } else if (s instanceof KyberbezpecnostnyStudent) {
                 kyber++;
             }
         }
