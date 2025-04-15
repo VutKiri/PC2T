@@ -1,3 +1,5 @@
+package projekt_pc2t;
+
 public class TelekomunikacnyStudent extends Student {
 
     public TelekomunikacnyStudent(int id, String meno, String priezvisko, int rokNarodenia) {

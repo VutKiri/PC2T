@@ -1,3 +1,5 @@
+package projekt_pc2t;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,4 +46,23 @@ public abstract class Student {
 
     // Abstraktná metóda pre vykonanie špeciálnej dovednosti
     public abstract void vykonajDovednost();
+
+	
+	public int getId() {
+	    return id;
+	}
+
+	public String getMeno() {
+	    return meno;
+	}
+
+	public String getPriezvisko() {
+	    return priezvisko;
+	}
+
+	public int getRokNarodenia() {
+	    return rokNarodenia;
+	}
 }
+
+	
