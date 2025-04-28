@@ -78,9 +78,9 @@ public class StudentDatabase {
         }
 
         if (pocet == 0) {
-            System.out.println("⚠️ Žiadni študenti v odbore: " + odbor);
+            System.out.println("Žiadni študenti v odbore: " + odbor);
         } else {
-            System.out.printf("📊 Priemer pre odbor %s: %.2f%n", odbor, (suma / pocet));
+            System.out.printf("Priemer pre odbor %s: %.2f%n", odbor, (suma / pocet));
         }
     }
 
